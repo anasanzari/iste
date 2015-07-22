@@ -1,0 +1,636 @@
+<!doctype html>
+<html>
+		<head>
+		<title>ISTE NITC Students' Chapter</title>
+		<meta name="keywords" content="iste nitc, nitc, iste , technical education, Iste NITC, nit calicut" />
+		<meta name="description" content="It is commonly known that the forte of any engineering college is its depth in its technical acumen. In NITC, ISTE is one such organization that is the sole contributor to this cause. Controlled from its Headquarters in Delhi, ISTE is linked in all colleges throughout India including the premier IITs" />
+		<meta property="og:title" content="ISTE NITC">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="http://istenitc.org/bgimg/istenitc.jpg">
+		<link rel="shortcut icon" href="bgimg/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<style>
+@font-face {
+	font-family: opensans;
+	src: url(fonts/oxy.ttf);
+}
+@font-face {
+	font-family: code;
+	src: url(fonts/code.otf);
+}
+@font-face {
+	font-family: check;
+	src: url(fonts/OptimusPrincepsSemiBold.ttf);
+}
+@font-face {
+	font-family: added;
+	src: url(fonts/JosefinSlab-Bold.ttf);
+}
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 150%;
+	box-sizing: border-box;
+	font-family: opensans;/*border:2px solid #000;*/
+}
+body {
+}
+#navmenu {
+	display: block;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color: rgba(255,255,255,.95);
+	-webkit-box-shadow: 0px 0px 10px #000;
+	box-shadow: 0px 0px 10px #000;
+}
+#navmenu nav ul {
+	list-style: none;
+	padding-top: 10px;
+}
+#navmenu nav ul li {
+	display: block;
+	float: left;
+	margin: 0em 0.5em;
+}
+#navmenu nav ul li a {
+	display: block;
+	font-size: 1em;
+	font-family: code;
+	color: #333;
+	padding: 0.7em 1em;
+	padding-bottom: 10px;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	border-bottom: 4px solid transparent;
+}
+#navmenu nav ul li a:hover {
+	color: #000;
+	border-bottom: 5px solid #CCCCCC;
+}
+#navmenu nav ul li.active>a {
+	color: #000;
+	border-bottom: 5px solid #CCCCCC;
+}
+#navmenu h1 {
+	float: right;
+	font-family: code;
+	font-size: 1.5em;
+	color: #2F444F;
+	padding: 10px 20px 0px 0px;
+	text-shadow: 3px 2px 1px #ccc;
+}
+#theback {
+	background-image: url(images/industries.jpg);
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
+	opacity: .8;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -50;
+}
+#theback2 {
+	background-image: url(images/iv/buildings.jpg);
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -50;
+	opacity: 0;
+}
+#theback3 {
+	background-image: url(images/iv/camera.jpg);
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -50;
+	opacity: 0;
+}
+.placetile {
+	width: 100%;
+}
+.placebox {
+	width: 75%;
+	border-radius: 5px;
+	margin: 0 auto;
+	background: rgba(255,0,0,.6);
+	color: #FFF;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 10px 15px;
+	-webkit-box-shadow: 0px 0px 2px #000;
+	box-shadow: 0px 0px 2px #000;
+}
+.placebox h2 {
+	text-align: center;
+	font-family: code;
+}
+.placebox p {
+	text-align: justify;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+/* Sections */
+.sec_common {
+	overflow: hidden;
+}
+.moreinfo {
+	background-color: rgba(63,63,63,.7);
+	border-radius: 3px;
+	border-bottom: 3px solid rgba(0,0,0,.5);
+	display: block;
+	clear: both;
+	color: #EEE;
+	font-size: 1em;
+	font-weight: bold;
+	width: 30%;
+	padding: 6px 0;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	cursor: pointer;
+	text-decoration: none;
+	font-family: code;
+}
+.moreinfo:hover {
+	background-color: rgba(63,63,63,.9);
+}
+.prev {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+}
+.prevbox {
+	width: 90%;
+	border-radius: 5px;
+	margin: 0 auto;
+	background: rgba(86,215,83,.7);
+	color: #FFF;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 20px 15px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.prevbox h1 {
+	font-family: code;
+	font-size: 1.2em;
+	text-align: center;
+}
+.gal1 {
+	width: 40%;
+	float: left;
+	margin: 0 auto;
+	border: 2px #000 dashed;
+}
+.gal1 img {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-left: 10%;
+}
+.galAll {
+	width: 60%;
+	float: left;
+	margin: 0 auto;
+}
+.galsub img {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+}
+.galsub {
+	width: 33.3%;
+	float: left;
+}
+.subheading {
+	text-align: center;
+	margin: 0 auto;
+	text-shadow: 4px 2px 1px rgba(0,0,0,.5);
+	color: #eee;
+	font-family: code;
+	border-bottom: rgba(255,255,255,.5) 5px solid;
+	width: 50%;
+}
+.common {
+	padding-top: 50px;
+}
+footer {
+	background: rgba(73,73,73,.5);
+	padding-top: 15px;
+	color: #fff;
+}
+footer a {
+	color: #FCC;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #FF9B9B;
+}
+footer .footerfloat {
+	float: right;
+	wdith: 50%;
+	padding-right: 20px
+}
+.slider {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.feedform {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.item {
+	display: block;
+	margin-top: 7px;
+	margin-bottom: 7px;/*border:2px #000 dashed;*/
+}
+/*button */
+
+.feedform input[type="submit"] {
+	background-color: #F5654B;
+	border-radius: 3px;
+	border-bottom: 3px solid #F00;
+	display: block;
+	color: #eee;
+	font-size: 1em;
+	font-weight: bold;
+	width: 40%;
+	height: 45px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.feedform input[type="submit"]:hover {
+	background-color: #FF3E3E;
+}
+.feedform input[type="text"] {
+	border-radius: 3px;
+	font-size: 1em;
+	height: 35px;
+	display: inline-block;
+	width: 70%;
+	margin: 0 auto;
+	padding: 2px;
+	background: #353535;
+	transition: all .5s ease-in-out;
+	color: #eee;
+}
+.feedform input[type=text]:focus, .feedform textarea:focus {
+	box-shadow: 0px 0px 2px #000;
+}
+.contact img {
+	margin: 50px 50px 0px 30px;
+	width: 40%;
+}
+.formbox {
+	width: 50%;
+	padding-left: 50px;
+	padding-top: 25px;
+	float: right;
+}
+.instructions {
+	width: 50%;
+	padding-left: 50px;
+	padding-top: 25px;
+	float: left;
+}
+label {
+	display: inline-block;
+	width: 25%;
+	padding: 5px 20px 5px 0px;
+	font-size: 1.2em;
+	color: #000;
+	padding-left: 2%;
+}
+.instructions h1 {
+	font-size: 1.2em;
+}
+#theform label.error {
+	font-size: 0.8em;
+	color: #F00;
+	font-weight: bold;
+	text-align: center;
+	width: 75%;
+}
+#theform input.error, #signup select.error {
+	background: #FFA9B8;
+	border: 1px solid red;
+}
+#regbox {
+	position: absolute;
+	top: 70px;
+	left: 10%;
+	width: 80%;
+	background-color: #FFFFFF;
+	padding: 20px 25px;
+	border-radius: 5px;
+	z-index: 2;
+}
+#closereg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #000;
+	color: #eee;
+	cursor: pointer;
+	padding: 5px;
+}
+#successpost {
+	position: absolute;
+	top: 50%;
+	right: 150px;
+}
+#successpost h1 {
+	font-size: 1em;
+}
+</style>
+		<link href="css/jquery.bxslider.css" rel="stylesheet" />
+		<script src="javascript/jquery-1.7.1.min.js"></script>
+		<script src="javascript/jquery.easing.1.3.js"></script>
+		<script src="javascript/TweenMax.min.js"></script>
+		<script src="javascript/jquery.scrollmagic.min.js"></script>
+		<script src="javascript/jquery.scrollmagic.debug.js"></script>
+		<script src="javascript/jquery.validate.min.js"></script>
+		<script src="javascript/jquery.bxslider.min.js"></script>
+		<script type="text/javascript">
+		
+		
+			var controller;
+			jQuery(document).ready(function($) {
+				
+				$("#successpost").hide();
+                                $("#ajaxloader").hide();
+				
+				$(".nav_link").click(function(event){	
+					var toSet = $("#navmenu").height();	
+					event.preventDefault();
+					$('html,body').stop().animate({scrollTop:$(this.hash).offset().top - toSet+1},2000,'easeInOutSine');
+                    $('.active').attr('class','');
+                    $(this).parent('li').attr('class','active');
+				});
+				$("#home").css("margin-top",$("#navmenu").height());
+				controller = new ScrollMagic();
+				
+				$('.bxslider').bxSlider({
+					
+ 					 mode: 'horizontal',
+					 adaptiveHeight:false
+					 
+				});
+				
+				$('#theform').validate({
+   
+						   rules: {
+							 email: {
+								required: true,
+								email: true
+							 },
+						   }, //end rules
+						   messages: {
+							  email: {
+								 required: "Please type e-mail address.",
+								 email: "This is not a valid email address."
+							   },
+						   },
+						   errorPlacement: function(error, element) { 
+							   if ( element.is(":radio")) {
+								  error.appendTo( element.parent()); 
+								} else {
+								  error.insertAfter(element);
+								} 
+							} ,
+							submitHandler: function(form) {
+							
+							var data = $("#theform").serialize();
+							$("#ajaxloader").fadeIn(100);
+                                                        
+                                                        $.post( "./suggest.php", data)
+                                                                .done(function( data ) {
+                                                                
+                                                                $("#successpost").fadeIn(500);
+								$("#theformbox").fadeOut(250);
+                                                                $("#successtext").append(data);
+                                                                $("#ajaxloader").fadeOut(100);
+                                                                });
+                                                        
+							
+							
+							
+						  }
+							
+						
+				  }); // end validate 
+				
+			 $("#regbox").hide();
+				$(".moreinfo").click(function(e) {
+                    $("#regbox").fadeIn(500);
+					$('html,body').stop().animate({scrollTop:0},2000,'easeInOutSine');
+                });
+				
+				$("#closereg").click(function(e){
+					$("#regbox").fadeOut(500);
+				});
+			
+		
+			});
+			
+			
+		</script>
+		</head>
+		<body>
+<div id="theback"></div>
+<div id="theback2"></div>
+<div id="theback3"></div>
+<header id="navmenu">
+          <h1 style="">Industrial Visit</h1>
+          <nav>
+    <ul>
+              <li class="active"> <a href="#home" class="nav_link">Home</a></li>
+              <li> <a href="#previous" class="nav_link">Previous</a></li>
+              <li> <a href="#photo_sec" class="nav_link">Photos</a></li>
+            </ul>
+  </nav>
+        </header>
+
+<!-- Home section -->
+<div id="home" class="common">
+          <h1 class="subheading"> Recent Events </h1>
+          <div class="placetile">
+    <div class="placebox"> <img style="float:left;width:40%;margin-top:25px;margin-right:20px"  src="images/highlite.jpg" />
+              <h2>Hilite City</h2>
+              <p style="padding-top:50px;">Hilite city, one of India's largest mixed use developments, has started gaining recognition at national level for its unique features.Its shopping mall covers more than 1.4 million square feet, office space spreading across 1 million square feet and houses 2000 futuristic apartments, exhibition centre, amphitheatre, rejuvenation centre and many more. </p>
+              <a class="moreinfo" style="visibility:hidden"> Register Now</a> </div>
+  </div>
+          <script>
+				// parallax
+				$(document).ready(function($) {
+					
+					TweenMax.fromTo(".placebox", 1, {opacity:0}, {opacity:1, ease: Linear.easeIn});
+					
+					 TweenMax.from($(".placebox"), 1, {scale:0});
+					 
+					new ScrollScene({
+							triggerElement: "#previous",
+							duration: $(window).height(),
+							offset: -500
+						})
+						.addTo(controller)
+						.triggerHook("onCenter")
+						.setTween(new TimelineMax().add([
+							
+							TweenMax.fromTo(".prevbox", 1, {scale:.1}, {scale:1, ease: Linear.easeIn}),
+							
+							
+						]));
+						
+					new ScrollScene({
+							triggerElement: "#previous",
+							duration: 500,
+							offset: -100
+						})
+						.addTo(controller)
+						.triggerHook("onCenter")
+						.setTween(new TimelineMax().add([
+							
+							
+							TweenMax.to("#theback", 1, {opacity:0}),
+							TweenMax.to("#theback2", 1, {opacity:.8})
+							
+						]));
+						
+						
+						new ScrollScene({
+							triggerElement: "#photo_sec",
+							duration: 500,
+							offset: -100
+						})
+						.addTo(controller)
+						.triggerHook("onCenter")
+						.setTween(new TimelineMax().add([
+							
+							
+							TweenMax.to("#theback2", 1, {opacity:0}),
+							TweenMax.to("#theback3", 1, {opacity:.8})
+							
+						]));
+					
+					});
+					
+					
+					
+			</script>
+          <div style="clear:both;height:1px" />
+        </div>
+<div id="previous" class="common">
+          <h1 class="subheading"> Previous Visits </h1>
+          <div class="prev">
+    <div class="prevbox">
+              <h1> Kuttiyadi Hydel Power Project</h1>
+              <p>ISTE NITC Students' Chapter organised industrial visit, to Kuttiyadi Hydel Power Project, exclusively for electrical engineering students with registrations crossing 60 on 15.11.2014. The highlight of Power Project is its capacity of 225MW, third largest in its category, under KSEB. The interaction with officers and workers gave a clear and practical understanding of power generation and transmission.</p>
+            </div>
+  </div>
+          <div class="prev">
+    <div class="prevbox">
+              <h1>Diesel Power Plant, Nallalam</h1>
+              <p>ISTE NITC Students' Chapter had its second industrial visit in current academic year to Peekay Steels and Diesel Powerplant,Calicut, which is the 2nd largest in its category in asia, on 22.11.2014. Visit had more than 40 registrations from mechanical engineering department and provided an insight to working environment in industry.</p>
+            </div>
+  </div>
+          <div style="clear:both;height:1px" />
+        </div>
+<div id="photo_sec" class="common" style="height:600px">
+          <h1 class="subheading"> Photos </h1>
+          <div class="slider">
+    <ul class="bxslider">
+              <li><img src="images/iv/1.jpg"/></li>
+              <li><img src="images/iv/2.jpg" /></li>
+              <li><img src="images/iv/3.jpg" /></li>
+              <li><img src="images/iv/4.jpg" /></li>
+            </ul>
+  </div>
+          <div style="clear:both;height:"1px" />
+        </div>
+<footer style="">
+          <div class="footerfloat">
+    <p class="copy">Copyright &copy; 2014<br/>
+              <span>All rights reserved.</span> </p>
+  </div>
+          <p >ISTE NITC Students' Chapter</p>
+          <p>Site Designed by <a href="https://www.facebook.com/anasanzari">Anas M</a>, <a href="https://www.facebook.com/jobin.ar">A R Jobin</a></p>
+        </footer>
+<div id="regbox" >
+          <div id="successpost">
+    <h1 id="successtext"></h1>
+  </div>
+          <div id="closereg">Close</div>
+          <h1 id="regHeading" style="text-align:center">Hilite City</h1>
+          <h2 style="text-align:center"> Registration </h2>
+          <div class="formbox" id="theformbox">
+    <form  action="./suggest.php" method="post" name="feedform" class="feedform" id="theform" >
+              <div class="item">
+        <label for="name" >Name :</label>
+        <input type="text"  name="name" class="required" id="name" title="Please type your name."/>
+      </div>
+              <div class="item">
+        <label for="rollno" >Rollno :</label>
+        <input type="text" class="required" name="rollno" id="rollno" title="Please type your roll no."/>
+      </div>
+              <div class="item">
+        <label for="email" >Email :</label>
+        <input type="text" id="email"  name="email"/>
+      </div>
+              <div class="item">
+        <label for="phone">Phone :</label>
+        <input type="text"  name="phone"  class="required" id="phone" title="Please type your phone no.">
+      </div>
+              <div class="item">
+        <p>*It is quite necessary that you read all the terms and conditions before registering.</p>
+        <p style="text-align:center">I accept:
+                  <input type="checkbox" value="0" name="agree" class="required" title="You must agree to terms and conditions.">
+                </p>
+      </div>
+              <div class="item" style="border:1px solid #fff;position:relative">
+              <img id="ajaxloader" src="images/ajaxloader.gif" style="width:25%;position:absolute;top:-40%;left:75%" />
+        <input type="submit" id="submit" value="Submit"/>
+      </div>
+            </form>
+  </div>
+          <div class="instructions">
+    <h1>Industrial Visit- Terms and Conditions</h1>
+    <ul>
+              <li>Students are supposed to maintain their code of conduct at the industries and in case of any misbehavior the industry can forbade he/she from entering the plant. </li>
+              <li>Student will be visiting the plant at their own risk and they are requested to be very careful and cautious</li>
+              <li>ISTE will not bear food and other expenses. Travel will be done in Volvo-Type Air bus.</li>
+              <li>Students are instructed to wear shoes.</li>
+              <li>Due to limited availability of seats the registration will be based on first cum first serve basis.</li>
+              <li>List needs to be submitted to the HR Manager so registration is compulsory</li>
+              <li>NITC id card is compulsory</li>
+              <li>Registration will be complete on paying Rs 150/- to the corresponding IV administrators.</li>
+              <li>The registration will be subject to cancellation if not paid.</li>
+            </ul>
+  </div>
+        </div>
+</body>
+</html>
