@@ -11,23 +11,86 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta charset="UTF-8">
 
-		<link rel='stylesheet' href="css/main.css" />
+		<!--link rel='stylesheet' href="css/main.css" -->
+                <link rel="stylesheet" href="css/materialize.min.css" >
+                <script type="text/javascript" src="js/materialize.min.js"></script>
+                
 		<script src="javascript/jquery-1.7.1.min.js"></script>
 		<script src="javascript/jquery.easing.1.3.js"></script>
 		<script src="javascript/TweenMax.min.js"></script>
 		<script src="javascript/jquery.scrollmagic.min.js"></script>
 		<script src="javascript/jquery.scrollmagic.debug.js"></script>
-        <script src="javascript/jquery.validate.min.js"></script>
+                <script src="javascript/jquery.validate.min.js"></script>
 		<script src='script/moment.min.js'></script>
 		<script src='script/fullcalendar.js'></script>
 		<script src="javascript/scripts.js"> </script>
 		
+                <style>
+                    
+                    @font-face {
+	font-family: opensans;
+	src: url('./fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+	font-family: code;
+	src: url(./fonts/code.otf);
+}
+
+*{
+    font-family: opensans;
+}
+                    
+                    .sec_common {
+	overflow: hidden;
+}
+
+                    .home {
+	background-color: #e43c49;
+	height: 650px;
+	position: relative;
+	background-image: url(../images/3.jpg);
+}
+
+.team h3{
+    font-size: 18px;
+}
+
+.team h2{
+    font-size: 14px;
+}
+
+#loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 500;
+	background-color: #FFF;
+}
+#loader .loader {
+	width: 10%;
+	position: fixed;
+	bottom: 100px;
+	left: 45%;
+}
+#loader .logo {
+	width: 15%;
+	position: fixed;
+	top: 100px;
+	left: 42.5%;
+}
+
+                </style>
+                
+                
 		</head>
 		<body>
 <div id="loader"> <img class="logo" src="images/isteicon.gif"/> <img class="loader" src="./images/1.gif" /> </div>
 <header id="navmenu" style="opacity:1">
           <nav>
-    <ul>
+              <div class="nav-wrapper">
+            <ul>
               <li class="active"> <a href="#sec_home" class="nav_link">Home</a></li>
               <li> <a href="#sec_spectrum" class="nav_link">Spectrum</a></li>
               <li> <a href="#sec_aks" class="nav_link">Aks</a></li>
@@ -36,8 +99,9 @@
               <li> <a href="#sec_team" class="nav_link">Our team</a></li>
               <li> <a href="#sec_contact" class="nav_link">Contact Us</a></li>
             </ul>
-  </nav>
-        </header>
+              </div>
+        </nav>
+</header>
 
 <!-- Home section -->
 <div id="sec_home" class="home" style="background-position: 50% 0%;">
@@ -46,13 +110,15 @@
         </div>
 
 <!-- Spectrum section -->
-<div id="sec_spectrum" class="sec_common spectrum">
-          <div class="pic"> <img src="images/spectrumtxt.png" /> </div>
-          <div class="desc">
-    <h1> Spectrum </h1>
-    <p><b>Spectrum</b> is an inter branch event conducted exclusively for the first year students of NITC. ISTE NITC Student Chapter through the past series of this event successfully inculcated a sense of camaraderie, team spirit, leadership and branch spirit among the first years.</p>
-    <a class="moreinfo" href="./underconstruction.html">More info</a> </div>
-        </div>
+<div id="sec_spectrum" class="row">
+    <div class="col s12 m6">
+        <h1> Spectrum </h1>
+        <p><b>Spectrum</b> is an inter branch event conducted exclusively for the first year students of NITC. ISTE NITC Student Chapter through the past series of this event successfully inculcated a sense of camaraderie, team spirit, leadership and branch spirit among the first years.</p>
+        <a class="waves-effect waves-light btn" href="./underconstruction.html">More info</a> </div>
+    <div class="col s12 m6"> <img class="responsive-img" src="images/spectrumtxt.png" /> </div>
+</div>
+          
+          
 <!-- parallax -->
 
 <div id="p1" class="parallax" style="background-color:#800000">
@@ -63,24 +129,29 @@
         </div>
 
 <!-- aks section -->
-<div id="sec_aks" class="sec_common aks">
-          <div class="pic"> <img class="smallimg" src="images/brain.jpg" /> </div>
-          <div class="desc">
-    <h1>Abdul kalam scholarship</h1>
-    <p>Abdul Kalam Scholarship(AKS) The Abdul Kalam Scholarship(AKS) is the premier scholarship examination conducted by ISTE exclusively for the first years. Format: The AKS is divided into three stages based on which the judgement is made- Written test, Group Discussion (GD) and a Personal Interview.</p>
-    <a class="moreinfo" href="./underconstruction.html">More info</a> </div>
-        </div>
+<div id="sec_aks" class="row" style="background: #333333;color:#FFF">
+    <div class="col s12 m6">
+        <h1>Abdul kalam scholarship</h1>
+        <p>Abdul Kalam Scholarship(AKS) The Abdul Kalam Scholarship(AKS) is the premier scholarship examination conducted by ISTE exclusively for the first years. Format: The AKS is divided into three stages based on which the judgement is made- Written test, Group Discussion (GD) and a Personal Interview.</p>
+        <a class="waves-effect waves-light btn" href="./underconstruction.html">More info</a>
+    </div>
+    <div class="col s12 m6"> <img class="responsive-img" src="images/brain.jpg" /> </div>
+</div>
+          
+          
 
 <!-- iv section -->
-<div id="sec_iv" class="sec_common iv" >
-          <div class="pic"> <img src="images/iv.png" /> </div>
-          <div class="desc">
+<div id="sec_iv" class="row" >
+    <div class="col s12 m6">
     <h1>Industrial Visit</h1>
     <p>Industrial visit is one of the primary events of ISTE NITC Students Chapter.It is 
               organized every year with great concern.Industrial visit provide an insight of on 
               the internal working environment of the company.</p>
-    <a class="moreinfo" href="./iv.html">More info</a> </div>
+    <a class="waves-effect waves-light btn" href="./iv.html">More info</a> </div>
+    <div class="col s12 m6"> <img class="responsive-img" src="images/iv.png" /> </div>
         </div>
+          
+          
 
 <!-- parallax -->
 
@@ -92,68 +163,82 @@
         </div>
 
 <!-- workshops section -->
-<div id="sec_workshop" class="sec_common workshop">
-          <div class="pic"> <img class="smallimg" src="images/workshop.png" /> </div>
-          <div  class="desc">
+<div id="sec_workshop" class="row">
+          
+          <div  class="col s12 m6">
     <h1>Career Workshop</h1>
     <p>Which Chick will you follow?" Career Workshop will help you open up the various avenues in life after B.Tech. From preparing for various entrance examinations to the placement scenario in our college, career workshop is a must for all.</p>
-    <a class="moreinfo" href="./underconstruction.html">More info</a> </div>
+    <a class="waves-effect waves-light btn" href="./underconstruction.html">More info</a> </div>
+    <div class="col s12 m6"> <img class="responsive-img" src="images/workshop.png" /> </div>
         </div>
 
 <!-- Our team section -->
-<div id="sec_team" class="sec_common team">
+<div id="sec_team">
           <h1 style="text-align:center;font-size:2em"> Our Team</h1>
-          <div class="row1">
-    <div class="holder">
-              <div class="profile" > <a href="https://www.facebook.com/yedumadanan"><img src="images/panel2015-16/Yedu.jpg" /></a> </div>
+  <div class="row team" style="text-align:center;">
+    <div class="col m3 s4">
+        <a href="https://www.facebook.com/yedumadanan">
+            <img class="responsive-img circle" style="height:150px;width:150px"  src="images/panel2015-16/Yedu.jpg" />
+        </a>
+        
               <h2>Yedu Krishnan</h2>
               <h3>Secretary</h3>
             </div>
-    <div class="holder">
-              <div class="profile" > <a href="http://www.facebook.com/bhopalkapiyush"><img src="images/panel2015-16/Piyush.jpg" /> </a></div>
+    <div class="col m3 s4">
+             <a href="http://www.facebook.com/bhopalkapiyush">
+                 <img class="responsive-img circle" style="height:150px;width:150px"  src="images/panel2015-16/Piyush.jpg" /> </a>
               <h2>Piyush Bhopalka</h2>
               <h3>Joint Secretary</h3>
             </div>
-    <div class="holder">
-              <div class="profile" > <img src="images/panel2015-16/Sadhiya.jpg" /> </div>
+    <div class="col m3 s4">
+              <img class="responsive-img circle" style="height:150px;width:150px"  src="images/panel2015-16/Sadhiya.jpg" />
               <h2>Sadhiya Shiraj</h2>
               <h3>Joint Secretary</h3>
             </div>
-    <div class="holder">
-              <div class="profile" > <a href="https://www.facebook.com/zubin.sachdeva.1"><img src="images/panel2015-16/Zubin.jpg" /> </a></div>
+    <div class="col m3 s4">
+              <a href="https://www.facebook.com/zubin.sachdeva.1">
+                  <img class="responsive-img circle" style="height:150px;width:150px"  src="images/panel2015-16/Zubin.jpg" /> </a>
               <h2>Zubin Sachdeva</h2>
               <h3>Treasurer</h3>
             </div>
-    <div class="holder">
-              <div class="profile" > <a href="https://www.facebook.com/vamsimadhav.thumati"><img src="#" /></a> </div>
+    <div class="col m3 s4">
+        <a href="https://www.facebook.com/vamsimadhav.thumati">
+            <img class="responsive-img circle" style="height:150px;width:150px"  src="#" />
+        </a>
               <h2>Vamsi Madhav</h2>
               <h3>Treasurer</h3>
             </div>
     
-  </div>
-          <div class="row1"> <!--Changed to row 1 from row 2 to accomodate 5 names-->
-    <div class="holder">
-              <div class="profile" > <a href="https://www.facebook.com/swathi.krishna.1029"><img src="images/panel2015-16/Swathi.jpg" /> </a></div>
+
+
+    <div class="col m3 s4">
+            <a href="https://www.facebook.com/swathi.krishna.1029">
+                <img class="responsive-img circle" style="height:150px;width:150px"  src="images/panel2015-16/Swathi.jpg" /> 
+            </a>
               <h2>Swathi Krishna</h2>
               <h3>Editor in Chief</h3>
             </div>
-    <div class="holder">
-              <div class="profile" > <a href="https://www.facebook.com/sashank.adibhatla"><img src="images/panel2015-16/Sashank.jpg" /> </a></div>
+    <div class="col m3 s4">
+              <a href="https://www.facebook.com/sashank.adibhatla">
+                  <img class="responsive-img circle" style="height:150px;width:150px"  src="images/panel2015-16/Sashank.jpg" /> 
+              </a>
               <h2>Adibhatla Sashank</h2>
               <h3>Human Resource</h3>
             </div>
-    <div class="holder">
-              <div class="profile" > <img src="#" /> </div>
+    <div class="col m3 s4">
+              <img class="responsive-img circle" style="height:150px;width:150px"  src="#" /> 
+              
               <h2>Vaishnavi Acharya</h2>
               <h3>Human Resource</h3>
             </div>
-    <div class="holder">
-              <div class="profile" > <img src="#" /> </div>
+    <div class="col m3 s4">
+              <img class="responsive-img circle" style="height:150px;width:150px"  src="#" />
               <h2>Ramkumar P</h2>
               <h3>Public Relations</h3>
             </div>
-    <div class="holder">
-              <div class="profile" > <a href="https://www.facebook.com/ktmanasa"><img src="images/panel2015-16/Manasa.jpg" /></a> </div>
+    <div class="col m3 s4">
+              <a href="https://www.facebook.com/ktmanasa">
+                  <img class="responsive-img circle" style="height:150px;width:150px"  src="images/panel2015-16/Manasa.jpg" /></a>
               <h2>Tejaswini Manasa</h2>
               <h3>Public Relations</h3>
             </div>
@@ -200,12 +285,11 @@
         
         <script>
         $("#successtext").hide();
-        //callback handler for form submit
+
 $("#theform").submit(function(e)
 {
     var postData = $(this).serialize();
     var formURL = $(this).attr("action");
-    //alert(postData);
     $.ajax(
     {
         url : formURL,
@@ -213,8 +297,7 @@ $("#theform").submit(function(e)
         data : postData,
         success:function(data, textStatus, jqXHR) 
         {
-            //data: return data from server
-            //alert("Success");
+            
             $("#theform").fadeOut(500);
             $("#successtext").fadeIn(1000);
         },
@@ -223,11 +306,10 @@ $("#theform").submit(function(e)
             //if fails      
         }
     });
-    e.preventDefault(); //STOP default action
-    e.unbind(); //unbind. to stop multiple form submit.
+    e.preventDefault(); 
+    e.unbind(); 
 });
  
-//$("#ajaxform").submit(); //Submit  the FORM
 
 </script>
         
